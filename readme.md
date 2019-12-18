@@ -17,4 +17,4 @@ You can see the complete layout with all layers visualized in ASCII art in the `
 
 ## Visualize keymap.c online
 
-To visualize a keymap.c file with all its layers online in the browser, you can use the [keymapceditor](http://ciantic.github.io/keymapceditor/) tool.
+To visualize a keymap.c file with all its layers online in the browser, you can use the [keymapceditor](http://ciantic.github.io/keymapceditor/) tool. To visualize this keymap on that page, click [here](http://ciantic.github.io/keymapceditor/#ergodox_ez|us|https%3A%2F%2Fraw.githubusercontent.com%2Fzawnk%2Fhotdox%2Fmaster%2Fkeymap.c)
