@@ -78,3 +78,15 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                    KC_TRNS,         KC_TRNS,     KC_TRNS
                  )
 };
+
+// customizing shorter tapping term for mod-tap keys (normal one for tap dance keys)
+uint16_t get_tapping_term(uint16_t keycode) {
+    switch (keycode) {
+        case LCTL_T(KC_TAB):
+            return TAPPING_TERM - 75;
+        case RALT_T(KC_RGUI):
+            return TAPPING_TERM - 75;
+        default:
+            return TAPPING_TERM;
+    }
+}
