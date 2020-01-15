@@ -12,8 +12,7 @@ enum {
 
 qk_tap_dance_action_t tap_dance_actions[] = {
   [TD_BRACKETS] = ACTION_TAP_DANCE_DOUBLE(KC_LBRC, KC_RBRC),
-  [TD_F4_CLOSE] = ACTION_TAP_DANCE_DOUBLE(KC_F4, LALT(KC_F4)),
-  [TD_CAPS] = ACTION_TAP_DANCE_DOUBLE(KC_LSFT, KC_CAPS)
+  [TD_F4_CLOSE] = ACTION_TAP_DANCE_DOUBLE(KC_F4, LALT(KC_F4))
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -22,7 +21,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                    KC_ESC,          KC_1,        KC_2,        KC_3,        KC_4,        KC_5,        LGUI(KC_TAB),
                    KC_GRV,          KC_Q,        KC_W,        KC_E,        KC_R,        KC_T,        KC_NO,
                    LCTL_T(KC_TAB),  KC_A,        KC_S,        KC_D,        KC_F,        KC_G,
-                   LSFT_T(KC_CAPS), KC_Z,        KC_X,        KC_C,        KC_V,        KC_B,        KC_NO, 
+                   KC_LSFT,         KC_Z,        KC_X,        KC_C,        KC_V,        KC_B,        KC_ENT, 
                    KC_NO,           KC_NO,       KC_LGUI,     KC_LALT,     KC_NO,
                                                                                         TG(MDIA),    KC_INS,
                                                                                                      KC_MUTE,
@@ -85,8 +84,6 @@ uint16_t get_tapping_term(uint16_t keycode) {
         case LCTL_T(KC_TAB):
             return TAPPING_TERM - 50;
         case RALT_T(KC_RGUI):
-            return TAPPING_TERM - 50;
-        case LSFT_T(KC_CAPS):
             return TAPPING_TERM - 50;
         default:
             return TAPPING_TERM;
