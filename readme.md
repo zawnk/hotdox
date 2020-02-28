@@ -13,7 +13,7 @@ More information can be found in the QMK docs: <https://docs.qmk.fm>
 
 ## Generate ASCII Layout
 
-You can see the complete layout with all layers visualized in ASCII art in the `layout.ascii` file. To generate this file, the [keymapviz tool](https://github.com/yskoht/keymapviz) is used. In case you don't have (or want) Python3 installed, you can run `docker-compose up` to in this folder to automatically generate this file. Remove remnants of the container with `docker-compose down`.
+You can see the complete layout with all layers visualized in ASCII art in the `layout.ascii` file. To generate this file, the [keymapviz tool](https://github.com/yskoht/keymapviz) is used with the command `keymapviz keymap.c -k ergodox > layout.ascii`. In case you don't have (or want) Python3 installed, you can run `docker-compose up` to in this folder to automatically generate this file. Remove remnants of the container with `docker-compose down`.
 
 ## Visualize keymap.c online
 
