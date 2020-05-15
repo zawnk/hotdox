@@ -84,7 +84,7 @@ uint16_t get_tapping_term(uint16_t keycode) {
         case LCTL_T(KC_TAB):
             return TAPPING_TERM - 50;
         case RALT_T(KC_RGUI):
-            return TAPPING_TERM - 50;
+            return TAPPING_TERM;
         default:
             return TAPPING_TERM;
     }
